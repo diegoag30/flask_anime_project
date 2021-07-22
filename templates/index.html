@@ -7,6 +7,13 @@
 {% block body %}
     <nav class="navbar navbar-dark bg-dark">
         <!-- Navbar content -->
+        <div class="container-fluid">
+            <a class="navbar-brand" href="{{url_for('index')}}">Home</a>
+            <form class="d-flex">
+              <input class="form-control-sm me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-sm btn-outline-secondary" type="submit">Search</button>
+            </form>
+          </div>
     </nav>
     <div class="main-title">
         <div class="container-md">
