@@ -1,4 +1,10 @@
 body{
     margin: 0;
-    font-family: sans-serif;
+    font-family: 'Uchen', serif;
+    color:blanchedalmond;
+    background-color: rgb(44, 44, 44);
+}
+
+.main-title{
+    padding-top: 10px;
 }
