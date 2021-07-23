@@ -10,6 +10,7 @@
             <h1 class="display-4 text-center"> Welcome to Anime Flask Project </h1>
         </div>
     </div>
-    <h1>This is some new content</h1>
-    <h1>New Content 2</h1>
+    {% for title in anime_titles %}
+        <p>{{ title }} </p>
+    {% endfor %}
 {% endblock %}   
