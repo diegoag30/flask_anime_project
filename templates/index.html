@@ -10,10 +10,17 @@
             <h1 class="display-4 text-center"> Welcome to Anime Flask Project </h1>
         </div>
     </div>
+    <div class="wrapper">
     {% for anime in anime_titles %}
-        <h1>{{ anime.name }} </h1>
-        <p>{{ anime.status }} </p>
-        <p>{{ anime.chapters_count }} </p>
-        <img src="{{anime.image}}"> 
+        <div class="card anime-card">
+            <img src="{{anime.image}}" class="card-img-top"> 
+            <div class="card-body">
+                <h1 clas="card-title">{{ anime.name }} </h1>
+                <p class="card-text"> <span> Status: </span> {{ anime.status }} </p>
+                <p class="card-text"><span> Episodes: </span> {{ anime.chapters_count }} </p>
+            </div>
+        </div>
+
     {% endfor %}
+    </div>
 {% endblock %}   

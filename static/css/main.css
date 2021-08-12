@@ -47,3 +47,17 @@ body{
     color: blanchedalmond;
     font-size: 2rem;
 }
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-gap: 10px;
+}
+
+.card.anime-card{
+    background-color: rgb(116, 113, 113);
+    width: 18rem;
+}
+.card.anime-card:hover{
+    border: 3px solid crimson;
+}
