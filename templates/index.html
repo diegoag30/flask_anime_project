@@ -10,7 +10,10 @@
             <h1 class="display-4 text-center"> Welcome to Anime Flask Project </h1>
         </div>
     </div>
-    {% for title in anime_titles %}
-        <p>{{ title }} </p>
+    {% for anime in anime_titles %}
+        <h1>{{ anime.name }} </h1>
+        <p>{{ anime.status }} </p>
+        <p>{{ anime.chapters_count }} </p>
+        <img src="{{anime.image}}"> 
     {% endfor %}
 {% endblock %}   
